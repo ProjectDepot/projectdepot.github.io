@@ -59,29 +59,28 @@ A documentation site is available, built with [Vitepress](https://vitepress.dev/
 
 ```text
 vue-node-sqlite-starter/
-├── client/                 # Vue 3 frontend
+├── client/                   # Vue 3 frontend
 │   ├── src/
-│   │   ├── components/     # Vue components
+│   │   ├── components/
 │   │   ├── App.vue
-│   │   └── main.ts
+│   │   └── main.ts           # Frontend entry point
 │   ├── package.json
 │   └── vite.config.ts
-├── server/                 # Node.js backend
+├── server/                   # Node.js backend
 │   ├── src/
-│   │   ├── routes/         # API routes
-│   │   ├── database.ts     # SQLite setup
-│   │   └── index.ts        # Server entry point
+│   │   ├── routes/           # API routes
+│   │   ├── database.ts       # SQLite setup
+│   │   └── index.ts          # Server entry point
 │   └── package.json
-├── shared/                 # Shared code and types
+├── shared/                   # Shared code and types
 │   ├── src/
-│   │   ├── types.ts        # Shared TypeScript interfaces
-│   │   └── index.ts
+│   │   ├── types.ts          # Shared types
+│   │   └── index.ts          # Shared code & exported types
 │   └── package.json
-├── docs/                   # Documentation site (VitePress)
-│   ├── .vitepress/
-│   │   └── config.mts      # VitePress configuration
-│   ├── index.md            # Documentation homepage
-├── package.json           # Root workspace configuration
+├── docs/                     # Documentation site (VitePress)
+│   ├── .vitepress/config.mts # VitePress configuration
+│   ├── index.md              # Documentation homepage
+├── package.json              # Root workspace configuration
 └── README.md
 ```
 
